@@ -18,10 +18,10 @@ output:
 
 .extraLarge[
 - The author replaces the non-line decoder of scVI with a linear transformation.
-- It gives interpretable loading for the latent variables while sacrifice the 
+- It gives interpretable loading for the latent variables while sacrificing the 
 ability of reconstruction.
-- Explore logit Normal vs. Normal distribution for the lantent variable.
-- Explore the effect of batch normalization during training period.
+- Explore logit Normal vs. Normal distribution for the latent variable.
+- Explore the effect of batch normalization during the training period.
 ]
 
 ---
