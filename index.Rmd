@@ -13,6 +13,19 @@ output:
       highlightLines: true
       countIncrementalSlides: false
 ---
+
+# Introduction: TL; DR
+
+.extraLarge[
+- The author replaces the non-line decoder of scVI with a linear transformation.
+- It gives interpretable loading for the latent variables while sacrifice the 
+ability of reconstruction.
+- Explore logit Normal vs. Normal distribution for the lantent variable.
+- Explore the effect of batch normalization during training period.
+]
+
+---
+
 ```{r setup, include = FALSE}
 options(htmltools.dir.version = FALSE)
 library(knitr)
@@ -38,17 +51,7 @@ xaringanExtra::use_panelset()
 <!-- whereas typically autoencoder models are designed with the same network topology in the inference functions and the reconstruction functions, what we propose is a restricted reconstruction function that leads to an increase in reconstruction error. However, by virtue of being linear, our reconstruction function provides an interpretable link between gene programs and cellular molecular phenotypes -->
 
 ???
----
 
-# Introduction: TL; DR
-
-.extraLarge[
-- The author replaces the non-line decoder of scVI with a linear transformation.
-- It gives interpretable loading for the latent variables while sacrifice the 
-ability of reconstruction.
-- Explore logit Normal vs. Normal distribution for the lantent variable.
-- Explore the effect of batch normalization during training period.
-]
 ---
 
 # Introduction: VAE
